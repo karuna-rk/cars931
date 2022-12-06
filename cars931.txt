@@ -1,0 +1,27 @@
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+cars_df=pd.read_csv("C:/Users/k2060/Documents/AI&ML/archive/Cars93.csv")
+cars_df.head((5))
+
+
+fig,(ax1,ax2)=plt.subplots(1,2)
+fig.set_figwidth(10)
+fig.set_figheight(7)
+ax1.boxplot(cars_df["Horsepower"])
+ax2.boxplot(cars_df["MPG.city"])
+ax1.set_title('Horsepower')
+ax1.set_xlabel('Horsepower')
+ax2.set_title('City Mileage')
+ax2.set_xlabel("City Mileage(in miles per US gallon)")
+fig.tight_layout()fig,(ax1,ax2)=plt.subplots(1,2)
+fig.set_figwidth(10)
+fig.set_figheight(7)
+ax1.boxplot(cars_df["Horsepower"])
+ax2.boxplot(cars_df["MPG.city"])
+ax1.set_title('Horsepower')
+ax1.set_xlabel('Horsepower')
+ax2.set_title('City Mileage')
+ax2.set_xlabel("City Mileage(in miles per US gallon)")
+fig.tight_layout()
